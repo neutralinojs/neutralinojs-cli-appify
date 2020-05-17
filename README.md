@@ -6,7 +6,7 @@ Convert any SPA to a lightweight desktop app - Appify plugin for neu-cli
 
 - Create a plugin which will work with `neu-cli`
 - Add command `neu appify <url>`
-- Download js template and add an iframe with `url`
-- Release app and say appify process was successful 
+- Download js template and add an iframe with `url` programmatically
+- Release app and say appify process was successful programmatically
 
 Check `neu-cli` plugin documentation [here](https://github.com/neutralinojs/neutralinojs-cli#plugins)
