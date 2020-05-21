@@ -1,0 +1,19 @@
+{
+  "name": "neutralinojs-cli-appify",
+  "version": "1.0.0",
+  "description": "Convert any SPA to a lightweight desktop app - Appify plugin for neu-cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neutralinojs/neutralinojs-cli-appify.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neutralinojs/neutralinojs-cli-appify/issues"
+  },
+  "homepage": "https://github.com/neutralinojs/neutralinojs-cli-appify#readme"
+}
