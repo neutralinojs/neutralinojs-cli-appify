@@ -1,5 +1,5 @@
 {
-  "name": "neutralinojs-cli-appify",
+  "name": "@neutralinojs/appify",
   "version": "1.0.0",
   "description": "Convert any SPA to a lightweight desktop app - Appify plugin for neu-cli",
   "main": "index.js",
