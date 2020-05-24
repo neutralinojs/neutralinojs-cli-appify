@@ -1,4 +1,7 @@
 # neutralinojs-cli-appify
+![npm](https://img.shields.io/npm/v/@neutralinojs/appify)
+![npm](https://img.shields.io/npm/dt/@neutralinojs/appify)
+
 Convert any SPA to a lightweight desktop app - Appify plugin for neu-cli
 
 
