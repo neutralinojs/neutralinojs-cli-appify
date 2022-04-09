@@ -10,27 +10,26 @@ Convert any SPA to a lightweight desktop app - Appify plugin for neu-cli
 Install neu-cli
 
 ```bash
-  npm install -g @neutralinojs/neu
+ $ npm install -g @neutralinojs/neu
 ```
 
 Add appify plugin
 
 ```bash
-  neu plugins --add @neutralinojs/appify
+ $ neu plugins --add @neutralinojs/appify
 ```
 
 Appify any web application
 
 ```bash
-  neu appify --title "MoviesZri" https://codezri.org/movieszri
-```
+ $ neu appify --title "MoviesZri" https://codezri.org/movieszri```
 
 ### How to uninstall
 
 Remove appify plugin
 
 ```bash
-  neu plugins --remove @neutralinojs/appify
+ $ neu plugins --remove @neutralinojs/appify
 ```
 
 ### Appify is a plugin for neu
