@@ -22,7 +22,8 @@ Add appify plugin
 Appify any web application
 
 ```bash
- $ neu appify --title "MoviesZri" https://codezri.org/movieszri```
+ $ neu appify --title "MoviesZri" https://codezri.org/movieszri
+ ```
 
 ### How to uninstall
 
