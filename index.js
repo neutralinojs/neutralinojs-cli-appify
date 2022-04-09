@@ -15,7 +15,7 @@ module.exports = {
                 modules.config.update('modes.window.enableInspector', false);
                 // Bundle it
                 await modules.bundler.bundleApp(true);
-                console.log(`Please check the .${binaryName}/dist folder and find your desktop app.`);
+                console.log(`Please check the ${binaryName}/dist folder and find your desktop app.`);
             })
     }
 };
