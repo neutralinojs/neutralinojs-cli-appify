@@ -5,7 +5,8 @@ module.exports = {
             .option('-t,--title [title]')
             .action(async (url, command) => {
                 // Make app 
-                let title = (command.title || 'Appify');
+                const inputURL = new URL(url);
+                let title = (command.title || inputURL.hostname || 'Appify');
                 let appId = title.toLowerCase().replace(/ /g, '.');
                 let binaryName = title.toLowerCase().replace(/ /g, '-');
                 await modules.creator.createApp(binaryName);
