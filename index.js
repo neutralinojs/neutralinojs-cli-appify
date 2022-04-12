@@ -5,8 +5,7 @@ module.exports = {
             .option('-t,--title [title]')
             .action(async (url, command) => {
                 // Make app 
-                const inputURL = new URL(url);
-                let title = (command.title || inputURL.hostname || 'Appify');
+                let title = (command.title || 'Appify');
                 let appId = title.toLowerCase().replace(/ /g, '.');
                 let binaryName = title.toLowerCase().replace(/ /g, '-');
                 await modules.creator.createApp(binaryName);
@@ -14,9 +13,10 @@ module.exports = {
                 modules.config.update('applicationId', appId);
                 modules.config.update('modes.window.title', title);
                 modules.config.update('modes.window.enableInspector', false);
+                modules.config.update("modes.window.exitProcessOnClose", true);
                 // Bundle it
                 await modules.bundler.bundleApp(true);
                 console.log(`Please check the .${binaryName}/dist folder and find your desktop app.`);
             })
     }
-};
+}
