@@ -1,20 +1,33 @@
+const https = require("https")
+
+const getTitle = async (url) => {
+ return new Promise((resolve,rej)=>{  
+    https.get(url, (res) => {
+      var body='', title='';
+      res.on('data',  (chunk) => {
+        body+=chunk;
+        if (!title && /<title>.*<\/title>/im.test(body)){
+          title=body.match(/<title>(.*)<\/title>/im)[1];
+        }
+      });
+      res.on('end', () => {
+          resolve(title)
+      });
+    }).on('error', (e) => {
+        rej("")
+    });
+  })
+}
+
+
 module.exports = {
-    command: 'appify <url>',
-    register: (command, modules) => {
+    command: 'appify <url> <t>',
+    register: async (command, modules) => {
         command
             .option('-t,--title [title]')
-            .action(async (url, command) => {
-                let hostname = new URL(url).hostame
-                hostname = hostame.split(".")
-                let titleExtractedFromURL
-                if(hostame.length>2){
-                    titleExtractedFromURL = hostname[1]
-                }
-                else{
-                    titleExtractedFromURL = hostname[0]
-                }
+            .action(async (url,command) => {
                 // Make app 
-                let title = (command.title|| titleExtractedFromURL || 'Appify');
+                let title = (command.title|| await getTitle(url) || 'Appify');
                 let appId = title.toLowerCase().replace(/ /g, '.');
                 let binaryName = title.toLowerCase().replace(/ /g, '-');
                 await modules.creator.createApp(binaryName);
