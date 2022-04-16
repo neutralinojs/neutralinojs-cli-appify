@@ -25,7 +25,7 @@ module.exports = {
     register: (command, modules) => {
         command
             .option('-t,--title [title]')
-            .action(async (url,command) => {
+            .action(async (url, command) => {
                 // Make app 
                 let title = (command.title|| await getTitle(url) || 'Appify');
                 let appId = title.toLowerCase().replace(/ /g, '.');
