@@ -21,8 +21,8 @@ const getTitle = async (url) => {
 
 
 module.exports = {
-    command: 'appify <url> <t>',
-    register: async (command, modules) => {
+    command: 'appify <url>',
+    register: (command, modules) => {
         command
             .option('-t,--title [title]')
             .action(async (url,command) => {
