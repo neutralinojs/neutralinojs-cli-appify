@@ -35,4 +35,4 @@ Remove appify plugin
 
 ### Appify is a plugin for neu
 
-Check `neu-cli` plugin documentation [here](https://github.com/neutralinojs/neutralinojs-cli#plugins) for more information about neu plugins.
+Check `neu-cli` plugin documentation [here](https://neutralino.js.org/docs/cli/neu-cli/#plugins) for more information about neu plugins.
