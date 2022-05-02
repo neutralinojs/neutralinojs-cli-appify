@@ -16,6 +16,7 @@ module.exports = {
                 modules.config.update('applicationId', appId);
                 modules.config.update('modes.window.title', title);
                 modules.config.update('modes.window.enableInspector', false);
+                modules.config.update('modes.window.exitProcessOnClose', true);
          
                 // Bundle it
                 await modules.bundler.bundleApp(true);
