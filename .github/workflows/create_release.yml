@@ -19,10 +19,6 @@ jobs:
         node-version: '16.x'
         registry-url: 'https://registry.npmjs.org'
         scope: '@neutralinojs'
-      
-    - name: Configure
-      run: |
-        npm ci
         
     - name: Create Release Notes
       run: |
