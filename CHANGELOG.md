@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v3.1.1
+
 ### Core: plugin
 
 - Extract title from the webpage and use as the application window title.
