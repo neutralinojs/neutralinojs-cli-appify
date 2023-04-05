@@ -19,10 +19,11 @@ Add appify plugin
 neu plugins --add @neutralinojs/appify
 ```
 
-Appify any web application
+Appify any web application, as shown in the following examples:
 
 ```bash
-neu appify --title "MoviesZri" https://codezri.org/movieszri
+neu appify https://codezri.org/movieszri
+neu appify --title "MoviesZri app" https://codezri.org/movieszri
 ```
 
 ### How to uninstall
